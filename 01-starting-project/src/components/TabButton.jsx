@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TabButton(children, onSelect) {
+function TabButton({children, onSelect}) {
 
   return (
     <li>
