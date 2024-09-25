@@ -38,9 +38,9 @@ const CountrySelect = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <select>
+    <select className='items-form-input'>
       {countries.map((country) => (
-        <option key={country.countryId} value={country.countryId}>
+        <option key={country.countryId} value={country.countryId} >
           {country.name}
         </option>
       ))}
