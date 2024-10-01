@@ -1,11 +1,19 @@
-function CoreConcepts({image, title, description}){
-    return(
-      <li>
-        <img src={image} alt={title}/>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </li>
-    )
-  }
+import React from 'react'
+import CoreConcept from './CoreConcept';
+import { CORE_CONCEPTS } from '../data';
 
-  export default CoreConcepts
+function CoreConcepts() {
+  return (
+    <section id='core-concepts'>
+    <h2>Core Concept</h2>
+    <ul>
+      { CORE_CONCEPTS.map((items) => (
+        <CoreConcept key={items.title} {...items}/>
+        
+      ) )}
+    </ul>
+  </section>
+  )
+}
+
+export default CoreConcepts
