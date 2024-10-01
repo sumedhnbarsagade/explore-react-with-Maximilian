@@ -23,7 +23,6 @@ function Examples() {
                 {EXAMPLES[selectedTopic].code}
                 </code>
               </pre>
-              
             </div>
         )
     }
