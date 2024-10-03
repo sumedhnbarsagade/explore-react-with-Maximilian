@@ -4,15 +4,9 @@ function App() {
   return (
     <main>
       <div id="game-container">
-        <ol id="player">
-          <Player name="Player 1" symbol="O"/>
-          <li>
-            <span className="players">
-              <span className="player-name">Player 2</span>
-              <span className="player-name">O</span>
-            </span>
-            <button>Edit</button>
-          </li>
+        <ol id="players">
+          <Player initialName="Player 1" symbol="X"/>
+          <Player initialName="Player 2" symbol="O"/>
         </ol>
         GAME BOARD
       </div>
